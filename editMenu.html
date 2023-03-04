@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Edit Menu</title>
+    <style>
+      /* CSS untuk mengatur posisi dan tampilan elemen "Change Photo" */
+      .change-photo {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        background-color: blueviolet;
+        padding: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+      }
+
+      .preview-image:hover + .change-photo {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      @media only screen and(max-width: 865px) {
+        .preview-image img {
+          width: 200px;
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start For Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="detailProfile.html">Home</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link border-bottom border-2" href="./addMenu.html">Add Recipe</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="./menu.html">Search Menu</a>
+            </li>
+          </ul>
+          <div class="d-flex pt-3 pt-lg-5 me-5">
+            <div class="border-img border-start border-5 border-warning p-3">
+              <img class="profile-img me-2" src="./Ellipse 128.png" alt="img" />
+            </div>
+            <div class="d-flex flex-column pt-2 text-center">
+              <p class=""><a class="text-decoration-none text-secondary" href="./detailProfile.html">Ayudia</a></p>
+              <p class=""><a class="text-decoration-none text-black fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModalToggle" href="">Logout</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end for navbar -->
+
+    <!-- Start for Modals -->
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center text-warning fw-bold fs-3 mt-2">You want to logout?</div>
+          <div class="d-flex flex-column text-center justify-content-center align-items-center">
+            <a class="text-center w-50" href="./login.html"><button class="btn w-100 btn-primary">YES</button></a>
+            <button class="btn btn-primary my-3 mb-4 w-50 text-center" data-bs-dismiss="modal">NO</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end for Modals -->
+
+    <!-- start for section -->
+    <section>
+      <div class="container pt-5 w-50 text-center">
+        <form>
+          <div class="form-group d-flex flex-column justify-items-center align-items-center">
+            <div class="d-flex flex-column position-relative">
+              <img src="./Rectangle 313.png" alt="Image Preview" class="preview-image" style="width: 500px; height: 300px" />
+              <span class="change-photo">Change Photo</span>
+            </div>
+          </div>
+
+          <div class="form-group mt-3 text-start">
+            <label class="form-control-label" for="title">Title</label>
+            <input type="text" class="form-control" id="title" placeholder="Enter title" />
+          </div>
+          <div class="form-group mt-3 text-start">
+            <label class="form-control-label" for="ingredients">Ingredients</label>
+            <textarea class="form-control" id="ingredients" rows="5" placeholder="Enter ingredients"></textarea>
+          </div>
+          <div class="form-group mt-3 text-start">
+            <label class="form-control-label" for="category">Category</label>
+            <select class="form-control" id="category">
+              <option value="breakfast">Breakfast</option>
+              <option value="lunch">Lunch</option>
+              <option value="dinner">Dinner</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary mt-3 align-items-center text-center" style="width: 150px">Update</button>
+        </form>
+      </div>
+    </section>
+    <!-- end for section -->
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="bg-warning text-center d-flex justify-items-center align-items-center flex-column mt-5">
+        <h3 class="pt-5">Eat, Cook, Repeat</h3>
+        <h5 class="pt-5">Share your best recipe by uploading here !</h5>
+        <div class="footer-product d-flex text-center justify-items-center align-items-center">
+          <p class="p-5"><a href="">Product</a></p>
+          <p class="pe-5"><a href="">Company</a></p>
+          <p class="pe-5"><a href="">Learn More</a></p>
+          <p class="pe-5"><a href="">Get In Touch</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end for Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

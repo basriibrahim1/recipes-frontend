@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Awal Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="detailProfile.html">Home</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="./addMenu.html">Add Recipe</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="./menu.html">Search Menu</a>
+            </li>
+          </ul>
+          <div class="d-flex pt-3 pt-lg-5 me-5">
+            <div class="border-img border-start border-5 border-warning p-3">
+              <img class="profile-img me-2" src="./Ellipse 128.png" alt="img" />
+            </div>
+            <div class="d-flex flex-column pt-2 text-center">
+              <p class=""><a class="text-decoration-none text-secondary" href="./detailProfile.html">Ayudia</a></p>
+              <p class=""><a class="text-decoration-none text-black fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModalToggle" href="">Logout</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- End of Navbar -->
+
+    <!-- Modals -->
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center text-warning fw-bold fs-3 mt-2">You want to logout?</div>
+          <div class="d-flex flex-column text-center justify-content-center align-items-center">
+            <a class="text-center w-50" href="./login.html"><button class="btn w-100 btn-primary">YES</button></a>
+            <button class="btn btn-primary my-3 mb-4 w-50 text-center" data-bs-dismiss="modal">NO</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modals -->
+    <!-- Start for Detail -->
+    <section>
+      <div class="container pt-5">
+        <!-- profile -->
+
+        <div class="d-flex pt-4 justify-content-between">
+          <div class="border-img border-start border-5 border-warning ps-3 d-flex">
+            <img class="profile-recipes me-3 mt-3" src="./Ellipse 128.png" alt="img" />
+            <div class="d-flex flex-column pt-2 text-center">
+              <p class=""><a class="text-decoration-none text-secondary" href="./detailMenu.html">Ayudia</a></p>
+              <p class=""><a class="text-decoration-none text-black fw-bold" href="./login.html">10 Recipes</a></p>
+            </div>
+          </div>
+
+          <!-- profile -->
+          <div class="align-items-end d-flex text-center flex-column pt-2">
+            <p>21 Februari 2023</p>
+            <p>20 Likes - 2 Comments</p>
+          </div>
+        </div>
+        <div class="pt-5">
+          <div class="w-100 text-center">
+            <h2 class="pt-5">Egg Sandwich</h2>
+            <img class="w-50 pt-5 align-items-center" src="./Rectangle 313.png" alt="" />
+            <div class="text-start pt-5">
+              <h3>Ingredients</h3>
+              <p>- 2 eggs</p>
+              <p>- 2 tbsp mayonnaise</p>
+              <p>- 3 slices bread</p>
+              <p>- a little butter</p>
+              <p>- ⅓ carton of cress</p>
+              <p>- 2-3 slices of tomato or a lettuce leaf and a slice of ham or cheese</p>
+              <p>- crisps, to serve</p>
+            </div>
+          </div>
+        </div>
+        <!-- End of profile detail -->
+        <!-- Bookmark and like -->
+        <div class="pt-5 border-bottom border-warning border-5 pb-5 w-100">
+          <img class="me-3 bg-warning p-2" style="width: 35px" src="./bookmark.png" alt="" />
+          <img class="p-2" style="width: 40px; border: 2px solid orange" src="./Vector.png" alt="" />
+        </div>
+        <!-- End of bookmark and like -->
+        <!-- Comment -->
+        <div class="pt-5 border-bottom border-warning border-5 pb-5">
+          <div class="d-flex pt-4">
+            <div class="border-img border-end border-5 border-warning pe-5 d-flex">
+              <img class="profile-recipes me-3 mt-3" src="./Ellipse 128.png" alt="img" />
+              <div class="d-flex flex-column pt-2 text-center">
+                <p class=""><a class="text-decoration-none text-secondary" href="./detailMenu.html">Karen</a></p>
+                <p class=""><a class="text-decoration-none text-black fw-bold" href="./login.html">20 Recipes</a></p>
+              </div>
+            </div>
+            <p class="ps-5 pt-4">Wow, I just made this and it was delicious! Thanks for sharing!</p>
+          </div>
+          <div class="d-flex pt-4">
+            <div class="border-img border-end border-5 border-warning pe-5 d-flex">
+              <img class="profile-recipes me-3 mt-3" src="./Ellipse 128.png" alt="img" />
+              <div class="d-flex flex-column pt-2 text-center">
+                <p class=""><a class="text-decoration-none text-secondary" href="./detailMenu.html">Ariel</a></p>
+                <p class=""><a class="text-decoration-none text-black fw-bold" href="./login.html">20 Recipes</a></p>
+              </div>
+            </div>
+            <p class="ps-5 pt-4">Wow, I just made this and it was delicious! Thanks for sharing!</p>
+          </div>
+        </div>
+
+        <div class="pt-5">
+          <textarea class="p-5 bg-light-subtle w-50" name="textarea" id="textarea" placeholder="Your Comment Here!"></textarea>
+        </div>
+        <button class="bg-warning p-2 rounded mt-3 text-white border-0 w-25" type="submit">Send a comment</button>
+        <!-- End Of Comment -->
+      </div>
+    </section>
+    <!-- Footer -->
+    <div class="bg-warning text-center d-flex justify-items-center align-items-center flex-column" style="margin-top: 100px">
+      <h3 class="pt-5">Eat, Cook, Repeat</h3>
+      <h5 class="pt-5">Share your best recipe by uploading here !</h5>
+      <div class="footer-product d-flex text-center justify-items-center align-items-center">
+        <p class="p-5"><a href="">Product</a></p>
+        <p class="pe-5"><a href="">Company</a></p>
+        <p class="pe-5"><a href="">Learn More</a></p>
+        <p class="pe-5"><a href="">Get In Touch</a></p>
+      </div>
+    </div>
+    <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
